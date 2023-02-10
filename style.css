@@ -5,7 +5,8 @@ body{
 
 p{
     color: whitesmoke;
-    font-size: 20px;
+    font-family: "DotGothic16";
+    font-weight: 500;
 }
 
 .header{
@@ -17,6 +18,7 @@ p{
 
 .header h1{
     color: whitesmoke;
+    font-family: "Press start 2P";
 }
 
 .ui{
@@ -27,7 +29,16 @@ p{
     justify-content: center;
 }
 
-.result p{
+.result .p1{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.result .p2{
+    padding-top: 0px;
+    margin-top: 30px;
     font-size: 32px;
 }
 
@@ -56,8 +67,28 @@ img{
     align-items: center;
 }
 
-.options img:hover{
-    transform: scale(1.1);
+.options img:hover, .button-container button:hover{
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-    
+    border: 3px solid black;
+    box-shadow: 1px 1px 1rem rgba(202, 136, 233, 0.979);
+}
+
+#clicked{
+    transform: scale(0.95);
+    box-shadow: 1px 1px 1rem rgba(107, 43, 136, 0.979);
+}
+
+
+.button-container p{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.button-container button{
+    padding: 20px 40px;
+    color: whitesmoke;
+    background-color: rgb(28, 34, 82);
+    border-radius: 10px;
 }
